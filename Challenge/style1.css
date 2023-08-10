@@ -1,0 +1,243 @@
+*{
+    padding:0;
+    margin:0;
+    font-weight:525;
+    box-sizing: border-box;
+}
+
+/* body{
+    border:5px solid black;
+    position: relative;
+} */
+
+h3{
+    text-align: center;
+    font-weight: bold;
+    background-color: #f7f7f7;
+    padding:15px;
+    position: relative;
+}
+
+h3::before{
+    content:"SALE";
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 15px;
+    color:white;
+    background-color:red;
+    padding:2px 8px;
+    display:inline-block;
+    position: absolute;
+    top:-12px;
+    left:-30px;
+
+}
+h4{
+    margin-top:20px;
+    margin-bottom:20px;
+    font-weight: bold;
+}
+
+#cost{
+    font-weight: bold;
+    font-size: 20px;
+    display: inline;
+}
+.shipping{
+    font-size: 12px;
+    color: grey;
+}
+
+.More:link, .More:visited{
+    color:black;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.More:hover, .More:active{
+    text-decoration: none;
+}
+
+li{
+    list-style: square;
+    padding-bottom:10px
+}
+
+button{
+    color:white;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    width:100%;
+    padding:10px 5px;
+    margin-top: 0px;
+}
+
+button:hover{
+    color:black;
+    background-color: white;
+    border-top:5px solid black;
+    border-bottom: 5px solid black;
+    height: 36px;
+    padding:5px;
+}
+
+ul{
+    margin-left:18px;
+}
+
+.info{
+    margin:10px 0;
+}
+
+.container{
+    border-top:5px solid black;
+    border-left:5px solid black;
+    border-right:5px solid black;
+    width:825px;
+    margin:50px auto;
+}
+
+.color-black{
+    background-color: black;
+    width:22px;
+    height:22px;
+    display: inline-block;
+    margin-right:10px;
+}
+
+.color-blue{
+    background-color: blue;
+    width:22px;
+    height:22px;
+    display: inline-block;
+    margin-right:10px;
+}
+
+.color-red{
+    background-color: red;
+    width:22px;
+    height:22px;
+    display: inline-block;
+    margin-right:10px;
+}
+
+.color-yellow{
+    background-color:yellow;
+    width:22px;
+    height:22px;
+    display: inline-block;
+    margin-right:10px;
+}
+
+.color-green{
+    background-color: green;
+    width:22px;
+    height:22px;
+    display: inline-block;
+    margin-right:10px;
+}
+
+.color-brown{
+    background-color: brown;
+    width:22px;
+    height:22px;
+    display: inline-block;
+}
+
+/* FLOATS */
+
+/* .challenge{
+    float:left;
+    width:275px;
+    height:230px;
+}
+
+article{
+    width:295px;
+    height:230px;
+    float:left;
+    padding:20px 40px;
+}
+
+.shipping{
+    float:right;
+    padding-top:5px;
+}
+
+aside{
+    width:220px;
+    margin-top:-5px;
+    float:right;
+} */
+
+/* FLEX */
+
+/* .colors{
+    display:flex;
+}
+.subcontainer{
+    display: flex;
+    align-items: center;
+}
+.subclass{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.challenge{
+    width:275px;
+    height:230px;
+}
+
+article{
+    width:295px;
+    height:230px;
+    line-height: 1.4;
+    padding:20px 40px;
+    margin-bottom:0;
+}
+
+aside{
+    width:220px;
+    margin-top:-30px;
+    line-height: 1.4;
+}
+/*  */
+.container{
+    display:grid;
+    /* grid-template-columns:275px 280px 220px; */
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+}
+
+.subclass{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3{
+    grid-column: 1/-1;
+}
+
+.challenge{
+    height:230px;
+    width:100%;
+    grid-row: 2/3;
+}
+
+button{
+    grid-column: 1/-1;
+    grid-row:3/4
+}
+
+header{
+    height:230px;
+}
+
+.main-header{
+    padding:20px 0px;
+}
